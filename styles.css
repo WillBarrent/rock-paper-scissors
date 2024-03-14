@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(to left top, #fca438, #bb6320);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    width: 1000px;
+    height: 1000px;
+    background-color: #f8efed;
+
+    border-radius: 10px;
+    box-shadow: 5px 10px 6em black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-counter, .game-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-counter {
+    align-self: end;
+    margin-right: 50px;
+}
+
+.game-char {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+}
+
+.game-img {
+    width: 200px;
+    height: 200px;
+
+    padding: 50px;
+
+    background-color: #fca438;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: .1s all;
+}
+
+.game-img:hover {
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.game-end  {
+    margin-top: 20px;
+    padding: 20px 80px;
+
+    font-weight: bold;
+}
+
+.game-lose {
+    background-color: #ffa58f;
+    color: #712143;
+}
+
+.game-win {
+    background-color: #e3e965;
+    color: #005800;
+}

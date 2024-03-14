@@ -29,7 +29,7 @@ body {
     background-color: #f8efed;
 
     border-radius: 10px;
-    box-shadow: 5px 10px 6em black;
+    box-shadow: 1px 2px 3em black;
 
     display: flex;
     flex-direction: column;
@@ -91,4 +91,9 @@ body {
 .game-win {
     background-color: #e3e965;
     color: #005800;
+}
+
+.game-draw {
+    background-color: #78767c;
+    color: #1c1833;
 }

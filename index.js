@@ -27,6 +27,4 @@ function playRound(playerSelection, computerSelection) {
     : "Draw!";
 }
 
-const playerSelection = prompt("Your selection: ", "Rock");
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+

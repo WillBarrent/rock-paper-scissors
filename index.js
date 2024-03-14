@@ -78,7 +78,7 @@ gameSelections.forEach(section => section.addEventListener('click', function(e) 
   computerCounter.textContent = `${counterSecond}`;
 
   if (!(counterFirst < 5 && counterSecond < 5)) {
-    document.querySelector('.result').textContent = counterFirst > counterSecond ? "YOU WIN!" : "YOU LOSE!"
+    document.querySelector('.result').textContent = counterFirst < counterSecond ? "YOU WIN!" : "YOU LOSE!"
     gameIsEnd = true;
   }
 
